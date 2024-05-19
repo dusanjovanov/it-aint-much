@@ -1,0 +1,42 @@
+{
+  "name": "it-aint-much",
+  "version": "0.0.1",
+  "description": "Tiny helpers for DOM manipulation",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dusanjovanov/it-aint-much"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "size": "npx pkg-size",
+    "types": "tsc",
+    "test": "vitest run",
+    "test-dev": "vitest"
+  },
+  "keywords": [
+    "dom",
+    "helpers"
+  ],
+  "author": "Dusan Jovanov",
+  "license": "MIT",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@preact/signals-core": "^1.6.0"
+  },
+  "devDependencies": {
+    "prettier": "2.8",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.2"
+  }
+}
